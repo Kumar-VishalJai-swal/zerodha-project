@@ -10,12 +10,12 @@ const Login = () => {
         e.preventDefault();
 
         try{
-            await axios.post("http://localhost:3002/login",{
+            await axios.post("https://zerodha-project-4.onrender.com/login",{
                 email, password
             })
             .then( res=>{
                 if(res.data=== "exist"){
-                    window.location.href = "http://localhost:3002/dashboard";
+                    window.location.href = "https://zerodha-project-4.onrender.com";
                 }
                 else if(res.data==="notexist"){
                     alert("user not exist");

@@ -12,7 +12,7 @@ const SignUp = () => {
   e.preventDefault();
 
   try{
-    await axios.post("http://localhost:3002/signup", {
+    await axios.post("https://zerodha-project-4.onrender.com/signup", {
       email, password, username
     })
     .then( res=>{
@@ -21,7 +21,7 @@ const SignUp = () => {
         
     }
     else if(res.data==="notexist"){
-      window.location.href = "http://localhost:3002/dashboard";
+      window.location.href = "https://zerodha-project-4.onrender.com";
        
      
     }
