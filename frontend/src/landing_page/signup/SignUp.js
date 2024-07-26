@@ -40,13 +40,13 @@ const SignUp = () => {
     <div className='mt-5 container flex-col p-5 bg-primary'>
       <input className='p-3' type='email' onChange={(e) => {setEmail(e.target.value)}} name='email' placeholder='Email'/><br/>
       <input className='p-3' type='password' name='password' onChange={(e) => {setPassword(e.target.value)}} placeholder='Password'/><br/>
-      <input className='p-3' type='text' name='username' onChange={(e) => {setUsername(e.target.value)}} placeholder='Username'/>
+      <input className='p-3' type='text' name='username' onChange={(e) => {setUsername(e.target.value)}} placeholder='Username'/><br/>
       <input className='p-3' type='submit' onClick={submit}/>
 
       <br/>
       <p>Or,</p>
-      <br/>
-      <Link className="bg-secondry" to='/login'>login account</Link>
+      
+      <Link className="bg-secondary text-red" to='/login'>login account</Link>
     </div>
   )
 }
