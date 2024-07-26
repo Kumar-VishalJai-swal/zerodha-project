@@ -39,7 +39,7 @@ const Login = () => {
         <br/>
         <p>Or,</p>
         <br/>
-        <Link className="bg-secondary text-red to='/signup'>create account</Link>
+        <Link className="bg-secondary text-red" to='/signup'>create account</Link>
 
         
     </div>
