@@ -28,18 +28,18 @@ const Login = () => {
         }
     }
   return (
-    <div className='container mt-5'>
+    <div className='mt-5 container flex-col p-5 bg-primary'>
         <h1 className='mt-5'>Login</h1>
         <from>
-            <input type='email' name='email' onChange={(e)=>{setEmail(e.target.value)}} placeholder='Email'/>
-            <input type='password' name='password' onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password'/>
+            <input className='p-3' type='email' name='email' onChange={(e)=>{setEmail(e.target.value)}} placeholder='Email'/><br/>
+            <input className='p-3' type='password' name='password' onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password'/><br/>
 
-            <input  type='submit' onClick={submit}/>
+            <input className='p-3'  type='submit' onClick={submit}/>
         </from>
         <br/>
         <p>Or,</p>
         <br/>
-        <Link to='/signup'>create account</Link>
+        <Link className="bg-secondary text-red to='/signup'>create account</Link>
 
         
     </div>
